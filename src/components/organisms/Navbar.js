@@ -15,11 +15,26 @@ function Navbar(props) {
     return (
         <header
             className={
-                "navbar lg:px-14 flex flex-wrap items-center lg:py-0 py-2 " +
+                "navbar lg:px-12 flex flex-wrap items-center lg:py-0 py-2 " +
                 styles.bgColor
             }
         >
             {logo}
+            <div class="shadow flex mx-16">
+                <input
+                    class="w-full rounded p-2"
+                    type="text"
+                    placeholder="Поиск по..."
+                />
+                <button class="bg-white w-auto flex justify-end items-center text-gray-400 p-2 hover:text-blue-400">
+                    <svg width="24" height="24" viewBox="0 0 24 24">
+                        <path
+                            fill="currentColor"
+                            d="M9.5,3A6.5,6.5 0 0,1 16,9.5C16,11.11 15.41,12.59 14.44,13.73L14.71,14H15.5L20.5,19L19,20.5L14,15.5V14.71L13.73,14.44C12.59,15.41 11.11,16 9.5,16A6.5,6.5 0 0,1 3,9.5A6.5,6.5 0 0,1 9.5,3M9.5,5C7,5 5,7 5,9.5C5,12 7,14 9.5,14C12,14 14,12 14,9.5C14,7 12,5 9.5,5Z"
+                        />
+                    </svg>
+                </button>
+            </div>
             <div
                 className="hidden lg:flex lg:items-center lg:w-auto w-full lg:mx-4"
                 id="menu"
@@ -36,7 +51,7 @@ function Navbar(props) {
                                   return (
                                       <NavLink
                                           className={
-                                              "lg:p-4 py-3 px-0 block border-b-2 border-transparent hover:" +
+                                              "lg:p-4 lg:px-6 py-3 px-0 block border-b-2 border-transparent hover:" +
                                               styles.hoverColor
                                           }
                                           activeStyle={{
