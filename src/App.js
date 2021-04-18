@@ -8,6 +8,14 @@ function App() {
             linkTo: "/map",
             component: <MapPage />,
         },
+        {
+            linkTo: "/analytics",
+            component: <MapPage />,
+        },
+        {
+            linkTo: "/about",
+            component: <MapPage />,
+        },
     ];
     return (
         <div className="app">
