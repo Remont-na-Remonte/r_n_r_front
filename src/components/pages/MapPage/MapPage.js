@@ -1,3 +1,4 @@
+import { Map } from "../../atoms";
 import { Navbar } from "../../organisms";
 
 function MapPage(props) {
@@ -39,6 +40,7 @@ function MapPage(props) {
     return (
         <div className={"map-page " + styles}>
             <Navbar styles={navStyles} buttons={navButtons} logo={navLogo} />
+            <Map />
         </div>
     );
 }
