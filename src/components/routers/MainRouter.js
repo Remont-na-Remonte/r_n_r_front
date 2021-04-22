@@ -6,7 +6,11 @@ function MainRouter(props) {
     return (
         <Switch>
             {forRouting.map((part) => {
-                return <Route path={part.linkTo}>{part.component}</Route>;
+                return (
+                    <Route key={part.id} path={part.linkTo}>
+                        {part.component}
+                    </Route>
+                );
             })}
         </Switch>
     );

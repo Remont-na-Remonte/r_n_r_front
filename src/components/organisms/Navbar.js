@@ -15,18 +15,18 @@ function Navbar(props) {
     return (
         <header
             className={
-                "navbar lg:px-12 flex flex-wrap items-center lg:py-0 py-2 fixed z-10 w-full " +
+                "navbar shadow-md lg:px-12 flex flex-wrap items-center lg:py-0 py-2 relative z-50 w-full " +
                 styles.bgColor
             }
         >
             {logo}
-            <div class="shadow flex mx-16">
+            <div className="shadow flex mx-16">
                 <input
-                    class="w-full rounded p-2"
+                    className="w-full rounded p-2"
                     type="text"
                     placeholder="Поиск по..."
                 />
-                <button class="bg-white w-auto flex justify-end items-center text-gray-400 p-2 hover:text-blue-400">
+                <button className="bg-white w-auto flex justify-end items-center text-gray-400 p-2 hover:text-blue-400">
                     <svg width="24" height="24" viewBox="0 0 24 24">
                         <path
                             fill="currentColor"
@@ -58,6 +58,7 @@ function Navbar(props) {
                                               borderColor: styles.activeColor,
                                           }}
                                           to={button.link}
+                                          key={button.id}
                                       >
                                           {button.text}
                                       </NavLink>
