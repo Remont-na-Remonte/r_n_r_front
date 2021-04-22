@@ -1,6 +1,6 @@
 import { Navbar } from "./components/organisms";
 import { MainRouter } from "./components/routers";
-import { MapPage, AboutUsPage } from "./components/pages";
+import { MapPage, AboutUsPage, AnalyticsPage } from "./components/pages";
 import { Redirect } from "react-router";
 
 function App() {
@@ -11,7 +11,7 @@ function App() {
         },
         {
             linkTo: "/analytics",
-            component: <MapPage />,
+            component: <AnalyticsPage />,
         },
         {
             linkTo: "/about",
