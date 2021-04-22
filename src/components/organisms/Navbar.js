@@ -15,7 +15,7 @@ function Navbar(props) {
     return (
         <header
             className={
-                "navbar lg:px-12 flex flex-wrap items-center lg:py-0 py-2 fixed z-10 w-full " +
+                "navbar shadow-md lg:px-12 flex flex-wrap items-center lg:py-0 py-2 relative z-50 w-full " +
                 styles.bgColor
             }
         >
