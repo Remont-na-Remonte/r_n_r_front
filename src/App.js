@@ -6,14 +6,17 @@ import { Redirect } from "react-router";
 function App() {
     const forRouting = [
         {
+            id: 0,
             linkTo: "/map",
             component: <MapPage />,
         },
         {
+            id: 1,
             linkTo: "/analytics",
             component: <AnalyticsPage />,
         },
         {
+            id: 2,
             linkTo: "/about",
             component: <AboutUsPage />,
         },
@@ -23,14 +26,17 @@ function App() {
         {
             link: "/map",
             text: "Карта",
+            id: 0,
         },
         {
             link: "/analytics",
             text: "Аналитика",
+            id: 1,
         },
         {
             link: "/about",
             text: "О нас",
+            id: 2,
         },
     ];
 
