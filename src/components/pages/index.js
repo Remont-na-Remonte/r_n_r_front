@@ -1,3 +1,4 @@
 import { MapPage } from "./MapPage";
+import { AboutUsPage } from "./AboutUsPage";
 
-export { MapPage };
+export { MapPage, AboutUsPage };
