@@ -3,7 +3,7 @@ import { SelectFilter, YearFilter } from "../atoms";
 function MapPageFilter(props) {
     const styles = props.styles
         ? props.styles
-        : "flex flex-col bg-white relative z-10 max-w-md p-7 rounded-b-md";
+        : "flex flex-col bg-white relative z-10 xl:max-w-md p-7 rounded-b-md";
 
     return (
         <div className={"map-page-filter " + styles}>

@@ -19,7 +19,7 @@ function Navbar(props) {
                 styles.bgColor
             }
         >
-            {logo}
+            {/* <div className="invisible xl:visible">{logo}</div> */}
             <div className="shadow flex mx-16">
                 <input
                     className="w-full rounded p-2"
