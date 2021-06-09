@@ -10,8 +10,7 @@ const INITIAL_VIEW_STATE = {
     bearing: 0,
 };
 
-const REACT_APP_MAPBOX_ACCESS_TOKEN =
-    "pk.eyJ1IjoiazA1bTBuYXZ0IiwiYSI6ImNraW12NGprNzBnazMyeW81Ymt1b3A2MDMifQ.uKBkUB2jRNAVTn-xY2rjyQ";
+const REACT_APP_MAPBOX_ACCESS_TOKEN = process.env.REACT_APP_MAPBOX_ACCESS_TOKEN;
 
 function Map(props) {
     return (
