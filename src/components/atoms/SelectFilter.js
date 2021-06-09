@@ -24,7 +24,7 @@ function SelectFilter(props) {
             >
                 {options.map((o) => {
                     return (
-                        <option key={o.id} value={o.id}>
+                        <option key={o.id} value={o.value}>
                             {o.text}
                         </option>
                     );
