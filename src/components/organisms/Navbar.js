@@ -1,7 +1,7 @@
 import { NavLink } from "react-router-dom";
 
 function Navbar(props) {
-    const logo = props.logo ? props.logo : null;
+    // const logo = props.logo ? props.logo : null;
     const styles = props.styles
         ? props.styles
         : {
